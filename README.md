@@ -1,9 +1,9 @@
-# Fabric Example Mod
+# BeholderTech
 
-## Setup
+A tech mod without adding unecessary resources.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## Ore Processing
+### Metal Ores (Iron, Gold, Copper)
+Ore Blocks put through the basic Grinder produce 2 (iron and Gold) or 6 (Copper) Raw Ores of their type.
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## Resource Multiplication
