@@ -16,6 +16,11 @@ public class BTItems {
     public static final Item FERREL_SEEDS = registerItem("ferrel_seeds",
             new AliasedBlockItem(BTBlocks.FERREL, new Item.Settings().group(ItemGroup.MATERIALS)));
 
+    public static final Item GOLDENDROP_HAY = registerItem("goldendrop",
+            new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
+    public static final Item FERREL_HAY = registerItem("ferrel",
+            new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
+
     //Generator Outputs
     /*public static final Item ENERGY_CRYSTAL = registerItem("placeholder",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));

@@ -7,5 +7,6 @@ import net.minecraft.client.render.RenderLayer;
 public class BTRenderHelper {
     public static void setRenderLayers(){
         BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.GOLDENDROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.FERREL, RenderLayer.getCutout());
     }
 }
