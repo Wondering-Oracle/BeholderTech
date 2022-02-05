@@ -15,6 +15,12 @@ public class BTItems {
             new AliasedBlockItem(BTBlocks.GOLDENDROP, new Item.Settings().group(ItemGroup.MATERIALS)));
     public static final Item FERREL_SEEDS = registerItem("ferrel_seeds",
             new AliasedBlockItem(BTBlocks.FERREL, new Item.Settings().group(ItemGroup.MATERIALS)));
+    public static final Item GOLD_OREROOT_SEEDS = registerItem("gold_oreroot_seeds",
+            new AliasedBlockItem(BTBlocks.GOLD_OREROOT, new Item.Settings().group(ItemGroup.MATERIALS)));
+    public static final Item IRON_OREROOT_SEEDS = registerItem("iron_oreroot_seeds",
+            new AliasedBlockItem(BTBlocks.IRON_OREROOT, new Item.Settings().group(ItemGroup.MATERIALS)));
+    public static final Item COPPER_OREROOT_SEEDS = registerItem("copper_oreroot_seeds",
+            new AliasedBlockItem(BTBlocks.COPPER_OREROOT, new Item.Settings().group(ItemGroup.MATERIALS)));
 
     public static final Item GOLDENDROP_HAY = registerItem("goldendrop",
             new Item(new Item.Settings().group(ItemGroup.MATERIALS)));

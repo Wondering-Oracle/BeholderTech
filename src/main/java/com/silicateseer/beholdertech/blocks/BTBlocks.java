@@ -22,6 +22,12 @@ public class BTBlocks {
             new GoldendropBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.GOLD).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
     public static final Block FERREL = registerBlockWithoutItem("ferrel",
             new FerrelBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.LIGHT_GRAY).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
+    public static final Block GOLD_OREROOT = registerBlockWithoutItem("gold_oreroot",
+            new GoldOrerootBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.GOLD).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
+    public static final Block IRON_OREROOT = registerBlockWithoutItem("iron_oreroot",
+            new IronOrerootBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.GOLD).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
+    public static final Block COPPER_OREROOT = registerBlockWithoutItem("copper_oreroot",
+            new CopperOrerootBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.GOLD).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItems(name, block, group);

@@ -8,5 +8,8 @@ public class BTRenderHelper {
     public static void setRenderLayers(){
         BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.GOLDENDROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.FERREL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.GOLD_OREROOT, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.IRON_OREROOT, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.COPPER_OREROOT, RenderLayer.getCutout());
     }
 }
