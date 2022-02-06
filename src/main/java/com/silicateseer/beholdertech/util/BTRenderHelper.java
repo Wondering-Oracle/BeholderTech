@@ -1,6 +1,6 @@
 package com.silicateseer.beholdertech.util;
 
-import com.silicateseer.beholdertech.blocks.BTBlocks;
+import com.silicateseer.beholdertech.block.BTBlocks;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
 

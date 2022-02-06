@@ -1,4 +1,4 @@
-package com.silicateseer.beholdertech.blocks;
+package com.silicateseer.beholdertech.block;
 
 import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;

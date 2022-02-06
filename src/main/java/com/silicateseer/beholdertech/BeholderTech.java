@@ -1,7 +1,7 @@
 package com.silicateseer.beholdertech;
 
-import com.silicateseer.beholdertech.blocks.BTBlocks;
-import com.silicateseer.beholdertech.items.BTItems;
+import com.silicateseer.beholdertech.block.BTBlocks;
+import com.silicateseer.beholdertech.item.BTItems;
 import com.silicateseer.beholdertech.util.BTRenderHelper;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;

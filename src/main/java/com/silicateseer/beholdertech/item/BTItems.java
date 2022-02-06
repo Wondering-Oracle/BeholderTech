@@ -1,8 +1,7 @@
-package com.silicateseer.beholdertech.items;
+package com.silicateseer.beholdertech.item;
 
 import com.silicateseer.beholdertech.BeholderTech;
-import com.silicateseer.beholdertech.blocks.BTBlocks;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import com.silicateseer.beholdertech.block.BTBlocks;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

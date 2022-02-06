@@ -1,8 +1,7 @@
-package com.silicateseer.beholdertech.blocks;
+package com.silicateseer.beholdertech.block;
 
 import com.silicateseer.beholdertech.BeholderTech;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
@@ -16,8 +15,6 @@ import net.minecraft.util.registry.Registry;
 
 public class BTBlocks {
 
-    public static final Block INFUSER = registerBlock("infusing_table", new Block(
-            AbstractBlock.Settings.of(Material.METAL).requiresTool().strength(3.5f)), ItemGroup.MISC);
     public static final Block GOLDENDROP = registerBlockWithoutItem("goldendrop",
             new GoldendropBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.GOLD).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
     public static final Block FERREL = registerBlockWithoutItem("ferrel",
