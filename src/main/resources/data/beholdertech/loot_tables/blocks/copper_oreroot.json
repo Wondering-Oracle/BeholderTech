@@ -21,7 +21,7 @@
       ]
     },
     {
-      "rolls": 1.0,
+      "rolls": 3.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -32,7 +32,7 @@
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:uniform_bonus_count",
               "parameters": {
-                "bonusMultiplier": 2
+                "bonusMultiplier": 1
               }
             }
           ],

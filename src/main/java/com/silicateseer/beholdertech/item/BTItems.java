@@ -10,6 +10,10 @@ import net.minecraft.util.registry.Registry;
 
 public class BTItems {
 
+    public static final Item METAMORPHIC_WHEAT_SEEDS = registerItem("metamorphic_wheat_seeds",
+            new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
+    public static final Item METAMORPHIC_BEETROOT_SEEDS = registerItem("metamorphic_beetroot_seeds",
+            new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
     public static final Item GOLDENDROP_SEEDS = registerItem("goldendrop_seeds",
             new AliasedBlockItem(BTBlocks.GOLDENDROP, new Item.Settings().group(ItemGroup.MATERIALS)));
     public static final Item FERREL_SEEDS = registerItem("ferrel_seeds",
