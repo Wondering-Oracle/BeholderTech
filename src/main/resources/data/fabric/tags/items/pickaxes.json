@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "beholdertech:bronze_pickaxe",
+    "beholdertech:quartz_pickaxe",
+    "beholdertech:silver_pickaxe",
+    "beholdertech:emerald_pickaxe"
+  ]
+}

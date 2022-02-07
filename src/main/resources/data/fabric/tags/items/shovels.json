@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "beholdertech:bronze_shovel",
+    "beholdertech:quartz_shovel",
+    "beholdertech:silver_shovel",
+    "beholdertech:emerald_shovel"
+  ]
+}

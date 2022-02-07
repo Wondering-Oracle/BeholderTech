@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "beholdertech:bronze_sword",
+    "beholdertech:quartz_sword",
+    "beholdertech:silver_sword",
+    "beholdertech:emerald_sword"
+  ]
+}
