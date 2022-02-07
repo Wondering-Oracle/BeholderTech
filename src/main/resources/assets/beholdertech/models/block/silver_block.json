@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "crop": "beholdertech:block/silver_block"
+  }
+}

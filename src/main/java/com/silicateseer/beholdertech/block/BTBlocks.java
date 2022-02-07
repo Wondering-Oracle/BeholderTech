@@ -26,6 +26,11 @@ public class BTBlocks {
     public static final Block COPPER_OREROOT = registerBlockWithoutItem("copper_oreroot",
             new CopperOrerootBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.GOLD).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
 
+    public static final Block BRONZE_BLOCK = registerBlock("bronze_block",
+            new Block(AbstractBlock.Settings.of(Material.METAL, MapColor.ORANGE)), ItemGroup.BUILDING_BLOCKS);
+    public static final Block SILVER_BLOCK = registerBlock("silver_block",
+            new Block(AbstractBlock.Settings.of(Material.METAL, MapColor.WHITE_GRAY)), ItemGroup.BUILDING_BLOCKS);
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItems(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(BeholderTech.MODID, name), block);

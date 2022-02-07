@@ -73,35 +73,35 @@ public class BTItems {
             new BTHoeItem(BTToolMaterials.SILVER, -1, -2.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
     //Quartz
-    public static final Item QUARTZ_SWORD = registerItem("bronze_sword",
+    public static final Item QUARTZ_SWORD = registerItem("quartz_sword",
             new SwordItem(BTToolMaterials.QUARTZ, 3, -2.4f,
                     new Item.Settings().group(ItemGroup.COMBAT)));
-    public static final Item QUARTZ_SHOVEL = registerItem("bronze_shovel",
+    public static final Item QUARTZ_SHOVEL = registerItem("quartz_shovel",
             new ShovelItem(BTToolMaterials.QUARTZ, 1.5f, -3.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
-    public static final Item QUARTZ_PICKAXE = registerItem("bronze_pickaxe",
+    public static final Item QUARTZ_PICKAXE = registerItem("quartz_pickaxe",
             new BTPickaxeItem(BTToolMaterials.QUARTZ, 1, -2.8f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
-    public static final Item QUARTZ_AXE = registerItem("bronze_axe",
+    public static final Item QUARTZ_AXE = registerItem("quartz_axe",
             new BTAxeItem(BTToolMaterials.QUARTZ, 6.0f, -3.1f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
-    public static final Item QUARTZ_HOE = registerItem("bronze_hoe",
+    public static final Item QUARTZ_HOE = registerItem("quartz_hoe",
             new BTHoeItem(BTToolMaterials.QUARTZ, -1, -2.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
     //Emerald
-    public static final Item EMERALD_SWORD = registerItem("bronze_sword",
+    public static final Item EMERALD_SWORD = registerItem("emerald_sword",
             new SwordItem(BTToolMaterials.EMERALD, 3, -2.4f,
                     new Item.Settings().group(ItemGroup.COMBAT)));
-    public static final Item EMERALD_SHOVEL = registerItem("bronze_shovel",
+    public static final Item EMERALD_SHOVEL = registerItem("emerald_shovel",
             new ShovelItem(BTToolMaterials.EMERALD, 1.5f, -3.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
-    public static final Item EMERALD_PICKAXE = registerItem("bronze_pickaxe",
+    public static final Item EMERALD_PICKAXE = registerItem("emerald_pickaxe",
             new BTPickaxeItem(BTToolMaterials.EMERALD, 1, -2.8f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
-    public static final Item EMERALD_AXE = registerItem("bronze_axe",
+    public static final Item EMERALD_AXE = registerItem("emerald_axe",
             new BTAxeItem(BTToolMaterials.EMERALD, 5.0f, -3.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
-    public static final Item EMERALD_HOE = registerItem("bronze_hoe",
+    public static final Item EMERALD_HOE = registerItem("emerald_hoe",
             new BTHoeItem(BTToolMaterials.EMERALD, -3, 0.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
 

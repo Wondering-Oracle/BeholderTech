@@ -1,6 +1,7 @@
 package com.silicateseer.beholdertech.item;
 
 import net.fabricmc.yarn.constants.MiningLevels;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -14,9 +15,9 @@ public enum BTToolMaterials implements ToolMaterial {
             () -> Ingredient.ofItems(BTItems.BRONZE_INGOT)),
     QUARTZ(MiningLevels.IRON,190,6.0f,1.0f,16,
             () -> Ingredient.ofItems(Items.QUARTZ)),
-    SILVER(MiningLevels.IRON,100,6.0f,1.0f,19,
+    SILVER(MiningLevels.IRON,100,6.0f,1.0f,18,
             () -> Ingredient.ofItems(BTItems.SILVER_INGOT)),
-    EMERALD(MiningLevels.DIAMOND,846,10.0f,2.0f,22,
+    EMERALD(MiningLevels.DIAMOND,846,10.0f,2.0f,20,
             () -> Ingredient.ofItems(Items.EMERALD));
 
     private final int miningLevel;
@@ -24,7 +25,7 @@ public enum BTToolMaterials implements ToolMaterial {
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
-    private final Lazy<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     BTToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
@@ -32,7 +33,7 @@ public enum BTToolMaterials implements ToolMaterial {
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repairIngredient = new Lazy<Ingredient>(repairIngredient);
+        this.repairIngredient = repairIngredient;
     }
 
     @Override
