@@ -2,6 +2,7 @@ package com.silicateseer.beholdertech.item;
 
 import com.silicateseer.beholdertech.BeholderTech;
 import com.silicateseer.beholdertech.block.BTBlocks;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -38,6 +39,8 @@ public class BTItems {
             new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
     public static final Item SILVER_INGOT = registerItem("silver_ingot",
             new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
+    //I Have So Many Ideas For This... and never enough time to implement them.
+    //Also There's SO MUCH Busywork in Adding Tools and Armor
 
     //Tools & Armor
     //Bronze
@@ -56,6 +59,18 @@ public class BTItems {
     public static final Item BRONZE_HOE = registerItem("bronze_hoe",
             new BTHoeItem(BTToolMaterials.BRONZE, -1, -2.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
+    public static final Item BRONZE_HELMET = registerItem("bronze_helmet",
+            new ArmorItem(BTArmorMaterials.BRONZE, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item BRONZE_CHESTPLATE = registerItem("bronze_chestplate",
+            new ArmorItem(BTArmorMaterials.BRONZE, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item BRONZE_LEGGINGS = registerItem("bronze_leggings",
+            new ArmorItem(BTArmorMaterials.BRONZE, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item BRONZE_BOOTS = registerItem("bronze_boots",
+            new ArmorItem(BTArmorMaterials.BRONZE, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
     //Silver
     public static final Item SILVER_SWORD = registerItem("silver_sword",
             new SwordItem(BTToolMaterials.SILVER, 3, -2.4f,
@@ -72,6 +87,18 @@ public class BTItems {
     public static final Item SILVER_HOE = registerItem("silver_hoe",
             new BTHoeItem(BTToolMaterials.SILVER, -1, -2.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
+    public static final Item SILVER_HELMET = registerItem("silver_helmet",
+            new ArmorItem(BTArmorMaterials.SILVER, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item SILVER_CHESTPLATE = registerItem("silver_chestplate",
+            new ArmorItem(BTArmorMaterials.SILVER, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item SILVER_LEGGINGS = registerItem("silver_leggings",
+            new ArmorItem(BTArmorMaterials.SILVER, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item SILVER_BOOTS = registerItem("silver_boots",
+            new ArmorItem(BTArmorMaterials.SILVER, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
     //Quartz
     public static final Item QUARTZ_SWORD = registerItem("quartz_sword",
             new SwordItem(BTToolMaterials.QUARTZ, 3, -2.4f,
@@ -88,6 +115,18 @@ public class BTItems {
     public static final Item QUARTZ_HOE = registerItem("quartz_hoe",
             new BTHoeItem(BTToolMaterials.QUARTZ, -1, -2.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
+    public static final Item QUARTZ_HELMET = registerItem("quartz_helmet",
+            new ArmorItem(BTArmorMaterials.QUARTZ, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item QUARTZ_CHESTPLATE = registerItem("quartz_chestplate",
+            new ArmorItem(BTArmorMaterials.QUARTZ, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item QUARTZ_LEGGINGS = registerItem("quartz_leggings",
+            new ArmorItem(BTArmorMaterials.QUARTZ, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item QUARTZ_BOOTS = registerItem("quartz_boots",
+            new ArmorItem(BTArmorMaterials.QUARTZ, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
     //Emerald
     public static final Item EMERALD_SWORD = registerItem("emerald_sword",
             new SwordItem(BTToolMaterials.EMERALD, 3, -2.4f,
@@ -104,6 +143,18 @@ public class BTItems {
     public static final Item EMERALD_HOE = registerItem("emerald_hoe",
             new BTHoeItem(BTToolMaterials.EMERALD, -3, 0.0f,
                     new Item.Settings().group(ItemGroup.TOOLS)));
+    public static final Item EMERALD_HELMET = registerItem("emerald_helmet",
+            new ArmorItem(BTArmorMaterials.EMERALD, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item EMERALD_CHESTPLATE = registerItem("emerald_chestplate",
+            new ArmorItem(BTArmorMaterials.EMERALD, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item EMERALD_LEGGINGS = registerItem("emerald_leggings",
+            new ArmorItem(BTArmorMaterials.EMERALD, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item EMERALD_BOOTS = registerItem("emerald_boots",
+            new ArmorItem(BTArmorMaterials.EMERALD, EquipmentSlot.HEAD,
+                    new Item.Settings().group(ItemGroup.COMBAT)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(BeholderTech.MODID, name), item);
