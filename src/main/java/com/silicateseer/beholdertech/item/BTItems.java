@@ -30,20 +30,6 @@ public class BTItems {
     public static final Item FERREL_HAY = registerItem("ferrel",
             new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
 
-    //Generator Outputs
-    /*public static final Item ENERGY_CRYSTAL = registerItem("placeholder",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-    //Grinder Outputs
-    public static final Item AMETHYST_DUST = registerItem("amethyst_dust",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-    public static final Item QUARTZ_DUST = registerItem("quartz_dust",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-    //Crusher Outputs
-    public static final Item DIAMOND_DUST = registerItem("diamond_dust",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-    public static final Item EMERALD_DUST = registerItem("emerald_dust",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));*/
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(BeholderTech.MODID, name), item);
     }

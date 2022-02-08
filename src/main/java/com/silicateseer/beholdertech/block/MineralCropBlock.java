@@ -10,21 +10,17 @@ import net.minecraft.world.BlockView;
 
 import java.util.Random;
 
-public class OreCropBlock extends PlantBlock {
-    public static final int MAX_AGE = 7;
-    public static final IntProperty AGE = Properties.AGE_7;
+public class MineralCropBlock extends PlantBlock {
+    public static final int MAX_AGE = 3;
+    public static final IntProperty AGE = Properties.AGE_3;
     private static final VoxelShape[] AGE_TO_SHAPE = new VoxelShape[]{
             Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 2.0, 16.0),
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 4.0, 16.0),
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 6.0, 16.0),
             Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 8.0, 16.0),
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 10.0, 16.0),
             Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 12.0, 16.0),
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 14.0, 16.0),
             Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0)
     };
 
-    public OreCropBlock(Settings settings) {
+    public MineralCropBlock(Settings settings) {
         super(settings);
     }
 
@@ -40,13 +36,13 @@ public class OreCropBlock extends PlantBlock {
 
     @Override
     public boolean hasRandomTicks(BlockState state) {
-        return state.get(AGE) < 7;
+        return state.get(AGE) < 3;
     }
 
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         int i = state.get(AGE);
-        if (i < 7 && random.nextInt(15) == 0) {
+        if (i < 3 && random.nextInt(15) == 0) {
             state = (BlockState)state.with(AGE, i + 1);
             world.setBlockState(pos, state, Block.NOTIFY_LISTENERS);
         }

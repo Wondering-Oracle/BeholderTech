@@ -10,7 +10,7 @@ import net.minecraft.world.BlockView;
 
 import java.util.Random;
 
-public class OreCropBlock extends PlantBlock {
+public class GemCropBlock extends PlantBlock {
     public static final int MAX_AGE = 7;
     public static final IntProperty AGE = Properties.AGE_7;
     private static final VoxelShape[] AGE_TO_SHAPE = new VoxelShape[]{
@@ -24,7 +24,7 @@ public class OreCropBlock extends PlantBlock {
             Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0)
     };
 
-    public OreCropBlock(Settings settings) {
+    public GemCropBlock(Settings settings) {
         super(settings);
     }
 
@@ -46,7 +46,7 @@ public class OreCropBlock extends PlantBlock {
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         int i = state.get(AGE);
-        if (i < 7 && random.nextInt(15) == 0) {
+        if (i < 7 && random.nextInt(31) == 0) {
             state = (BlockState)state.with(AGE, i + 1);
             world.setBlockState(pos, state, Block.NOTIFY_LISTENERS);
         }

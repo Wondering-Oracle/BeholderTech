@@ -19,7 +19,7 @@
                   }
                 }
               ],
-              "name": "beholdertech:gold_oreroot_seeds"
+              "name": "beholdertech:iron_oreroot_seeds"
             },
             {
               "type": "minecraft:item",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "rolls": 2.0,
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
