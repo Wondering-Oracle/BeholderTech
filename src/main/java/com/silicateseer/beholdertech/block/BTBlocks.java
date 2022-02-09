@@ -25,6 +25,10 @@ public class BTBlocks {
             new IronOrerootBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.GOLD).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
     public static final Block COPPER_OREROOT = registerBlockWithoutItem("copper_oreroot",
             new CopperOrerootBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.GOLD).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
+    public static final Block DIAMANTIUM = registerBlockWithoutItem("diamantium",
+            new DiamantiumBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.DIAMOND_BLUE).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
+    public static final Block MERALDIUM = registerBlockWithoutItem("meraldium",
+            new MeraldiumBlock(AbstractBlock.Settings.of(Material.PLANT, MapColor.EMERALD_GREEN).noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP)));
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItems(name, block, group);

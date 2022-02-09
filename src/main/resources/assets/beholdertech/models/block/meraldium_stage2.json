@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "beholdertech:block/meraldium_stage2"
+  }
+}

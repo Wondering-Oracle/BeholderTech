@@ -11,5 +11,7 @@ public class BTRenderHelper {
         BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.GOLD_OREROOT, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.IRON_OREROOT, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.COPPER_OREROOT, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.DIAMANTIUM, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BTBlocks.MERALDIUM, RenderLayer.getCutout());
     }
 }

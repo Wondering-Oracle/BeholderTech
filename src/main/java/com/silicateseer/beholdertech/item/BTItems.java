@@ -24,6 +24,10 @@ public class BTItems {
             new AliasedBlockItem(BTBlocks.IRON_OREROOT, new Item.Settings().group(ItemGroup.MATERIALS)));
     public static final Item COPPER_OREROOT_SEEDS = registerItem("copper_oreroot_seeds",
             new AliasedBlockItem(BTBlocks.COPPER_OREROOT, new Item.Settings().group(ItemGroup.MATERIALS)));
+    public static final Item DIAMANTIUM_SEEDS = registerItem("diamantium_seeds",
+            new AliasedBlockItem(BTBlocks.DIAMANTIUM, new Item.Settings().group(ItemGroup.MATERIALS)));
+    public static final Item MERALDIUM_SEEDS = registerItem("meraldium_seeds",
+            new AliasedBlockItem(BTBlocks.MERALDIUM, new Item.Settings().group(ItemGroup.MATERIALS)));
 
     public static final Item GOLDENDROP_HAY = registerItem("goldendrop",
             new Item(new Item.Settings().group(ItemGroup.MATERIALS)));
