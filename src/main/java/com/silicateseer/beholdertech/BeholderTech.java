@@ -1,6 +1,7 @@
 package com.silicateseer.beholdertech;
 
 import com.silicateseer.beholdertech.block.BTBlocks;
+import com.silicateseer.beholdertech.item.BTArmorToolsRegister;
 import com.silicateseer.beholdertech.item.BTItems;
 import com.silicateseer.beholdertech.util.BTRenderHelper;
 import net.fabricmc.api.ModInitializer;
@@ -23,6 +24,7 @@ public class BeholderTech implements ModInitializer {
 
 		BTItems.registerBTItems();
 		BTBlocks.registerBTBlocks();
+		BTArmorToolsRegister.registerBTATReg();
 
 		BTRenderHelper.setRenderLayers();
 	}

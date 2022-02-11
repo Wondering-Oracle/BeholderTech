@@ -43,8 +43,10 @@ public class BTItems {
     //Also There's SO MUCH Busywork in Adding Tools and Armor
 
     //Tools & Armor
+    //See ArmorToolsRegister
+    //And Yes, I Forgot to Change the EquipmentSlot on the ArmorItems. Oops.
     //Bronze
-    public static final Item BRONZE_SWORD = registerItem("bronze_sword",
+    /*public static final Item BRONZE_SWORD = registerItem("bronze_sword",
             new SwordItem(BTToolMaterials.BRONZE, 3, -2.4f,
                     new Item.Settings().group(ItemGroup.COMBAT)));
     public static final Item BRONZE_SHOVEL = registerItem("bronze_shovel",
@@ -154,7 +156,7 @@ public class BTItems {
                     new Item.Settings().group(ItemGroup.COMBAT)));
     public static final Item EMERALD_BOOTS = registerItem("emerald_boots",
             new ArmorItem(BTArmorMaterials.EMERALD, EquipmentSlot.HEAD,
-                    new Item.Settings().group(ItemGroup.COMBAT)));
+                    new Item.Settings().group(ItemGroup.COMBAT)));*/
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(BeholderTech.MODID, name), item);
